@@ -1,8 +1,7 @@
 name: deploy demo
-
 on: [push]
 jobs:
-	deploy:
+	deploy-demo:
 		runs-on: ubuntu-latest
 		steps:
 		  - name: step 1
@@ -17,5 +16,5 @@ jobs:
 		  - run: npm install -g bats
 		  
 		  - name: step 4
-		  - run: bats -v && echo "sunsetjesus"
+		  - run: bats -v 
 
