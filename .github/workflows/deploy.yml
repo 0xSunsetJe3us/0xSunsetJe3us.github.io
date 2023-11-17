@@ -1,11 +1,6 @@
 name: deploy demo
 
-on: 
-	push:
-		branch:
-			- main
-		paths-ignore: 
-			- LICENSE
+on: [push]
 jobs:
 	deploy:
 		runs-on: ubuntu-latest
